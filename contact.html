@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez l'équipe Astuces WhatsApp – Posez vos questions sur WhatsApp." />
+  <title>Contact – Astuces WhatsApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">💬</span>
+        <span class="logo-text">Astuces<strong>WhatsApp</strong></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="recuperer.html" class="nav-link">Récupérer un compte</a>
+        <a href="proteger.html" class="nav-link">Protéger WhatsApp</a>
+        <a href="whatsapp-web.html" class="nav-link">WhatsApp Web</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="ad-zone ad-top">
+    <span class="ad-label">Publicité</span>
+    <div class="ad-placeholder">728 × 90 – Bannière haut de page</div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">✉️ Support</span>
+      <h1>Nous contacter</h1>
+      <p>Vous avez une question sur WhatsApp ? Notre équipe vous répond dans les 24 heures.</p>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <div class="container content-grid">
+      <article class="article-body">
+
+        <div class="contact-form-wrap">
+          <h2>Envoyer un message</h2>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Votre nom <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet <span class="required">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="">— Choisissez un sujet —</option>
+                <option value="recuperer">Récupérer mon compte</option>
+                <option value="piratage">Compte piraté</option>
+                <option value="bug">Problème technique</option>
+                <option value="suggestion">Suggestion d'article</option>
+                <option value="autre">Autre</option>
+              </select>
+              <span class="field-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="6" placeholder="Décrivez votre problème ou question en détail..." required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            ✅ Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les 24 heures.
+          </div>
+        </div>
+
+        <!-- PUB MILIEU -->
+        <div class="ad-zone ad-mid">
+          <span class="ad-label">Publicité</span>
+          <div class="ad-placeholder">336 × 280 – Carré milieu de contenu</div>
+        </div>
+
+        <h2>Questions fréquentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Comment récupérer un compte WhatsApp sans le téléphone ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Si vous avez perdu votre téléphone, vous pouvez réinstaller WhatsApp sur un nouveau téléphone avec le même numéro. WhatsApp vous enverra un code SMS ou par appel. Si votre numéro a changé, contactez votre opérateur pour conserver l'ancien numéro.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Combien de temps faut-il pour réactiver un compte banni ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>WhatsApp répond généralement aux demandes de réexamen en 24 à 72 heures. Dans certains cas, cela peut prendre jusqu'à une semaine. Soyez patient et n'envoyez qu'une seule demande.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Peut-on utiliser WhatsApp Web sans téléphone ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>WhatsApp Web nécessite que votre téléphone soit connecté à Internet lors de la première connexion (scan du QR code). Après cela, vous pouvez continuer à utiliser WhatsApp Web même si votre téléphone n'est plus connecté, pendant un certain temps.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Comment signaler un compte WhatsApp frauduleux ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Ouvrez la conversation → appuyez sur le nom du contact → faites défiler jusqu'à "Signaler". Vous pouvez aussi bloquer le contact en même temps. WhatsApp analysera les derniers messages échangés.</p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3>Guides populaires</h3>
+          <ul class="sidebar-links">
+            <li><a href="recuperer.html">🔑 Récupérer un compte</a></li>
+            <li><a href="proteger.html">🛡️ Protéger WhatsApp</a></li>
+            <li><a href="whatsapp-web.html">🖥️ WhatsApp Web</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h3>⏱️ Délai de réponse</h3>
+          <p style="font-size:0.95rem; color: var(--text-muted); line-height:1.6;">Nous répondons à tous les messages dans un délai de <strong style="color:var(--green)">24 heures</strong>, du lundi au vendredi.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="ad-zone ad-bottom">
+      <span class="ad-label">Publicité</span>
+      <div class="ad-placeholder">728 × 90 – Bannière bas de page</div>
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">💬</span>
+        <span class="logo-text">Astuces<strong>WhatsApp</strong></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Accueil</a>
+        <a href="recuperer.html">Récupérer</a>
+        <a href="proteger.html">Protéger</a>
+        <a href="whatsapp-web.html">WhatsApp Web</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 AstucesWhatsApp.fr – Site indépendant, non affilié à Meta.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
